@@ -1,4 +1,9 @@
 # Vue JS Up and Running
+The steps below outline how to get from the
+[base Webpack template](https://github.com/vuejs-templates/webpack) to the
+completed example project included in this repo. Walking through them will
+allow you to try out component composition, testing, and state management
+with Vuex.
 
 ## Initial setup
 ```sh
