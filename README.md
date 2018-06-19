@@ -36,24 +36,26 @@ export default {
 ### Add to `components/HelloWorld.vue`
 #### HTML
 ```html
-<!-- Under the <h1> -->
-
-<input v-model="nextItem" placeholder="edit me">
-<button v-on:click="addItem">Submit</button>
-<p>Item: {{ nextItem }}</p>
-<ol>
-  <todo-item
-    v-for="item in itemList"
-    :key="item.id"
-    :todo="item">
-  </todo-item>
-</ol>
+<template>
+  <div class="hello">
+    <h1>{{ msg }}</h1>
+    <input v-model="nextItem" placeholder="edit me">
+    <button v-on:click="addItem">Submit</button>
+    <p>Item: {{ nextItem }}</p>
+    <ol>
+      <todo-item
+        v-for="item in itemList"
+        :key="item.id"
+        :todo="item">
+      </todo-item>
+    </ol>
+  </div>
+</template>
 ```
 
 #### JavaScript
-```js
-// Between the <script> tags
-
+```html
+<script>
 import TodoItem from './TodoItem.vue'
 
 export default {
@@ -79,6 +81,7 @@ export default {
     }
   }
 }
+</script>
 ```
 
 ## Testing
